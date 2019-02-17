@@ -3,17 +3,89 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    
 </head>
 
 
 <body>
+    <header class="container-fluid">
         <div>
             <p class="MHMG">MHMG</p>
         </div>
         <div>
             <p>Marcus Hornby Memory Game</p>
         </div>
-       
+        <div class="switch">
+            <label><p id="difficulty-title">To put the game on hard mode, just click the switch</p>
+              <input type="checkbox" id="difficult">
+              <span class="lever"></span>
+            </label>
+        </div>
+    </header>
+
+
+    <div id="game">
+        <div id="board">
+            <div id="colors" class="colors">
+                <div id="green" onClick="rememberAndAddToSequence(this.id)"></div>
+                <div id="red" onClick="rememberAndAddToSequence(this.id)"></div>
+                <div id="yellow" onClick="rememberAndAddToSequence(this.id)"></div>
+                <div id="blue" onClick="rememberAndAddToSequence(this.id)"></div>
+            </div>
+            <div class="controls center">
+                <h3>MHMG</h3>
+                
+                
+                <!-- Switch -->
+                <div id="buttons" class="row">
+                    <div class="col s6">
+                        <button id="start" class="z-depth-1 start-button"></button>
+                    </div>
+                    <div class="col s6">
+                        <a href="https://mhmg-project-cushor90.c9users.io/index.html"><button class="reset-button" id="reset" class="z-depth-1"></button></a>
+                    </div>
+                    
+                    
+                    <!-- gameplay mode -->
+                    <div class="col s6">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s6 labels">
+                        <p>START</p>
+                    </div>
+                    <div class="col s6 labels">
+                        <p>RESET</p>
+                    </div>
+                </div>
+                <div class="count">
+                    <h5 id="count-num">--</h5>
+                </div>
+            </div>
+        </div>
+        <div id="completeGame" class="hidden">
+            <div id="msg"></div>
+            <br>
+            <a href="index.html" id="new-game">Play Again</a>
+        </div>
+    </div>
+
+
+    <footer class="container-fluid">
+        <div id="footer-details" class="row">
+            <p>Take a look at my Github account by clicking <a href="https://github.com/marcuscistudent" target="_blank">here</a>
+        </div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
