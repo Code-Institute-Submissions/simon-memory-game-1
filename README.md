@@ -19,7 +19,7 @@ I spoke with my Mentor and he offered me some advice and told me to do some rese
 to find the function that allowed me to generate things randomly '(Math.random() * num) + 1' or '[Math.floor(Math.random()*4)];'
 
 
-I researched how to create a random pattern which added a color:
+I researched other peoples projects on github and on user forums and youtube videos how to create a random pattern which added a color:
 
 
 function getColor(num) {
