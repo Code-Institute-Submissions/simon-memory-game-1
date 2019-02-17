@@ -190,6 +190,13 @@ button:focus {
     margin-bottom: 190px;
 }
 
+
+#final-screen {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 190px;
+}
+
 #msg,
 #new-game {
     font-size: 50px;
