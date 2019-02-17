@@ -1,3 +1,23 @@
+/*---------------------------------------------------------------Header*/
+
+header {
+    padding-top: 0;
+    text-align: center;
+    background-color: #0D0D79;
+    min-height: 120px;
+    margin: 0;
+    font-size: 20px
+}
+
+header p {
+    display: inline-block;
+    color: white;
+}
+
+.MHMG {
+    font-size: 40px;
+}
+
 /*---------------------------------------------------------------body*/
 
 body {
@@ -9,6 +29,20 @@ body {
     color: #fff;
 }
 
+/*---------------------------------------------------------------footer*/
+
+footer {
+    text-align: center;
+    background-color: #0D0D79;
+    min-height: 120px;
+    margin: 0;
+    font-size: 20px
+}
+
+footer p {
+    padding-top: 40px;
+    color: white;
+}
 
 /*---------------------------------------------content*/
 
@@ -71,4 +105,97 @@ body {
     margin: 0;
     position: relative;
 
+}
+
+.controls {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    border: 3px solid black;
+    top: 150px;
+    right: 165px;
+    background-color: #D8D8D8;
+}
+
+
+
+#buttons {
+    margin-top: -10px;
+}
+
+.labels {
+    margin-top: -34px;
+}
+
+button {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #00C853;
+    margin: -3px auto 7px auto;
+}
+
+
+.start-button{
+    background-color: green;
+}
+.reset-button{
+    background-color: yellow;
+}
+
+button start{
+    background-color: #00C853;
+}
+
+button reset{
+    background-color: #yellow;
+}
+
+
+button:focus {
+    background-color: #00C853;
+}
+
+#difficulty-title {
+    margin-top: 8px;
+}
+
+
+.count {
+    width: 60px;
+    height: 35px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    margin: -24px auto 0 auto !important;
+    color: #F44336;
+    background-color: #000000;
+}
+
+.count>h5 {
+    margin-top: 3.5px;
+}
+
+.animate {
+    opacity: 0.8;
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.25), inset 0 5px 5px rgba(0, 0, 0, 0.22) !important;
+}
+
+.hidden {
+    display: none;
+}
+
+#completeGame {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 190px;
+}
+
+#msg,
+#new-game {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#new-game {
+    color: #03A9F4;
 }
